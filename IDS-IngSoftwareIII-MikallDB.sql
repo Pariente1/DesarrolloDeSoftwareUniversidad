@@ -19,7 +19,7 @@ CREATE TABLE Empleado (
     Apellido_Paterno NVARCHAR(100) NOT NULL,
     Apellido_Materno NVARCHAR(100) NULL,
     Fecha_Nacimiento DATE NOT NULL,
-    RFC NVARCHAR(13) UNIQUE NOT NULL,
+    RFC NVARCHAR(13) UNIQUE,
     Centro_Trabajo INT NOT NULL,
     ID_Puesto INT NOT NULL,
     Directivo BIT NOT NULL DEFAULT 0,
