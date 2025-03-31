@@ -1,3 +1,26 @@
+select * from empleado p inner join  Catalogo_Centros c on p.Centro_Trabajo = c.ID_Centro where p.Nombre='Carlitos'
+select * from directivo
+select * from Catalogo_Puestos
+select * from Catalogo_Centros
+
+DROP TABLE EMPLEADO
+DROP TABLE DIRECTIVO
+DROP TABLE Catalogo_Puestos
+DROP TABLE Catalogo_Centros
+
+INSERT INTO Catalogo_Centros (Nombre_Centro, Ciudad)
+VALUES
+('Centro Culiacan', 'Culiacan.'),
+('Centro Guasave', 'Guasave'),
+('Centro Navolato', 'Navolato');
+
+INSERT INTO Catalogo_puestos (Nombre_Puesto, Descripcion_Puesto)
+VALUES
+('Vendedor', 'vende.'),
+('Cajero', 'cajas'),
+('Directivo', 'dirige');
+
+
 -- Creación de la tabla de Centros
 CREATE TABLE Catalogo_Centros (
     ID_Centro INT PRIMARY KEY IDENTITY(1,1),
