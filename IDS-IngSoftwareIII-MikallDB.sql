@@ -1,6 +1,6 @@
 -- Creación de la tabla de Centros
 CREATE TABLE Catalogo_Centros (
-    ID_Centro INT PRIMARY KEY,
+    ID_Centro INT PRIMARY KEY IDENTITY(1,1),
     Nombre_Centro NVARCHAR(100) NOT NULL,
     Ciudad NVARCHAR(100) NOT NULL
 );
