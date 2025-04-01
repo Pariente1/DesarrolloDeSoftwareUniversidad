@@ -24,14 +24,14 @@ VALUES
 -- Creación de la tabla de Centros
 CREATE TABLE Catalogo_Centros (
     ID_Centro INT PRIMARY KEY IDENTITY(1,1),
-    Nombre_Centro NVARCHAR(100) NOT NULL,
+    Nombre_Centro NVARCHAR(100) NOT NULL UNIQUE,
     Ciudad NVARCHAR(100) NOT NULL
 );
 
 -- Creación de la tabla de Puestos
 CREATE TABLE Catalogo_Puestos (
     ID_Puesto INT PRIMARY KEY IDENTITY(1,1),
-    Nombre_Puesto NVARCHAR(100) NOT NULL,
+    Nombre_Puesto NVARCHAR(100) NOT NULL UNIQUE,
     Descripcion_Puesto NVARCHAR(255) NULL
 );
 
